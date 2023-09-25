@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: UpdateAssets
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1170.529,"y":635.336},"$type":"GameScripts.HotUpdate.UpdateAssets.FsmStates.CreateUI","$id":"0"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1323.529,"y":767.336},"$type":"GameScripts.HotUpdate.UpdateAssets.FsmStates.UpdateVersion","$id":"1"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1040.529,"y":843.3359},"$type":"GameScripts.Aot.GameLogic.UpdateResource.States.UpdateManifest","$id":"2"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1302.825,"y":927.3359},"$type":"GameScripts.Aot.GameLogic.UpdateResource.States.CreateDownloader","$id":"3"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1065.529,"y":1155.336},"$type":"GameScripts.Aot.GameLogic.UpdateResource.States.DownloadFiles","$id":"4"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1458.529,"y":1067.336},"$type":"GameScripts.Aot.GameLogic.UpdateResource.States.DownloadOver","$id":"5"},{"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":1635.395,"y":1247.494},"$type":"GameScripts.Aot.GameLogic.UpdateResource.States.UpdateDone","$id":"6"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"TotalDownloadCount","_targetVariableID":"0ea85831-d7a2-467e-9516-943f5dd03f08"},"checkType":1,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"TotalDownloadCount","_targetVariableID":"0ea85831-d7a2-467e-9516-943f5dd03f08"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"IsDownloadSucceed","_targetVariableID":"c67aa2fe-1143-43cb-a450-5e66da83467e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"IsDownloadSucceed","_targetVariableID":"c67aa2fe-1143-43cb-a450-5e66da83467e"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"DownloadingOperation":{"_name":"DownloadingOperation","_id":"9c23e8c8-dde0-426f-9e4f-3b01b952099c","$type":"NodeCanvas.Framework.Variable`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"PackageVersion":{"_name":"PackageVersion","_id":"02dbd32a-9ebc-4d7c-914d-8860ceff5a23","$type":"NodeCanvas.Framework.Variable`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"TotalDownloadCount":{"_name":"TotalDownloadCount","_id":"0ea85831-d7a2-467e-9516-943f5dd03f08","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"IsDownloadSucceed":{"_name":"IsDownloadSucceed","_id":"c67aa2fe-1143-43cb-a450-5e66da83467e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"HaveUpdatedDlls":{"_name":"HaveUpdatedDlls","_id":"b31506c6-7bde-4eda-917c-bd784c1b4e02","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.29
+    _category: 
+    _comments: 
+    _translation: {x: -353, y: -293}
+    _zoomFactor: 0.77174777
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}
